@@ -1,6 +1,9 @@
 " Specify a directory for plugins
 call plug#begin('~/.config/nvim/bundle')
 
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -152,6 +155,10 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR>
+nmap <leader>gs :G<CR>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
