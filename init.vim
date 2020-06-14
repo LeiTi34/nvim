@@ -87,6 +87,7 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 set mouse=a
+set nohlsearch
 
 colorscheme gruvbox
 
