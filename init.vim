@@ -31,7 +31,8 @@ call plug#end()
 let mapleader = " "
 
 nmap <C-p> :GFiles<CR>
-nnoremap <Leader>pf :Files<CR>
+nmap <leader>fg :GFiles<CR>
+nnoremap <Leader>ff :Files<CR>
 
 inoremap jk <ESC>
 nmap <C-n> :NERDTreeToggle<CR>
