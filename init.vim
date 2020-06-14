@@ -31,6 +31,7 @@ call plug#end()
 let mapleader = " "
 
 nmap <C-p> :GFiles<CR>
+nnoremap <Leader>pf :Files<CR>
 
 inoremap jk <ESC>
 nmap <C-n> :NERDTreeToggle<CR>
@@ -180,7 +181,7 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
-nmap <F2> <Plug>(coc-rename)
+nmap <leader>rr <Plug>(coc-rename)
 
 " Remap for format selected region
 xmap <leader>f  <Plug>(coc-format-selected)
